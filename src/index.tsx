@@ -7,14 +7,13 @@ import './index.css';
 import App from './layout/Index';
 import * as serviceWorker from './serviceWorker';
 // import '@babel/polyfill/lib';
+// <React.StrictMode>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ConfigProvider locale={zhCN}>
-      <App />
-    </ConfigProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  <ConfigProvider locale={zhCN}>
+    <App />
+  </ConfigProvider>
+  , document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
